@@ -1,13 +1,15 @@
 import Nav from "./components/Nav";
 import layoutStyles from "./styles/Layout.module.css";
+import "./globals.css";
 
-const Layout = ({ children }) => {
+export default function RootLayout({ children }) {
   return (
-    <>
-      <Nav />
-      <main className={layoutStyles.main}>{children}</main>
-    </>
+    <html lang="en">
+      <head></head>
+      <body>
+        <Nav />
+        <main className={layoutStyles.main}>{children}</main>
+      </body>
+    </html>
   );
-};
-
-export default Layout;
+}
