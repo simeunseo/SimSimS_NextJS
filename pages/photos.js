@@ -1,9 +1,10 @@
-import React from "react";
+import HeadInfo from "@/components/HeadInfo";
 
 const photos = () => {
   return (
     <div>
-      <h1>photos</h1>
+      <HeadInfo title="심은서의 심화 스터디 사진 - 심심스사" />
+      <h1>심은서의 심화 스터디 사진 - 심심스사</h1>
     </div>
   );
 };
